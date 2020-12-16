@@ -22,10 +22,10 @@
                 <option value="Femme">Femme</option>
                 <option value="autre">Autre</option>
             </select>
-            <input type="text" placeholder="Prenom" name="firstName">
-            <input type="text" placeholder="Nom" name="lastName">
+            <input type="text" placeholder="Prenom" name="firstName" required>
+            <input type="text" placeholder="Nom" name="lastName"required>
             <input type="submit" value="let's gooo">
-            <input type="file" name="file">
+            <input type="file" name="file" required>
         </fieldset>
     </form>
 
