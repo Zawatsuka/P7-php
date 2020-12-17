@@ -13,7 +13,7 @@
     if(empty($_GET['gender']) && empty($_GET['firstName']) && empty($_GET['lastName']) && empty($_GET['file']) ){
 
         ?>
-    <form action="index.php" method="get">
+    <form action="" method="get">
         <fieldset>
             <legend>Formulaire n°2</legend>
             <select name="gender" id="gender">
