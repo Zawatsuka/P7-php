@@ -29,19 +29,19 @@
     </form>
 
     <?php
-     } else if(isset($_GET['firstName']) && isset($_GET['lastName']) && isset($_GET['gender'])) {
+     } else {
          $gender = $_GET['gender'];
          $firstName = $_GET['firstName'];
          $lastName = $_GET['lastName'];
 
-         if($gender == "Homme"){
-             echo "bonjour ". $firstName ." ". $lastName ." et vous etes un ".$gender ;
-         } else if($gender == "Femme") {
-            echo "bonjour ". $firstName ." ". $lastName ." et vous etes une ".$gender ;
-         } else if($gender == "autre") {
-            echo "bonjour ". $firstName ." ". $lastName ." vous etes de type autre";
+         if($gender == 'Homme'){
+             echo "bonjour  $firstName  $lastName  et vous etes un $gender" ;
+         } else if($gender == 'Femme') {
+            echo "bonjour  $firstName  $lastName et vous etes une $gender" ;
+         } else if($gender == 'autre') {
+            echo "bonjour  $firstName  $lastName vous etes de type  $gender";
           } else {
-                echo "vous n'avez pas mis de sexe ";
+                echo 'vous n\'avez pas mis de sexe ';
             }
          }
      ?>

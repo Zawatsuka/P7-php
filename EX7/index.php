@@ -10,7 +10,7 @@
 <body>
     <?php
 
-    if(empty($_GET['gender']) && empty($_GET['firstName']) && empty($_GET['lastName']) ){
+    if(empty($_GET['gender']) && empty($_GET['firstName']) && empty($_GET['lastName']) && empty($_GET['file']) ){
 
         ?>
     <form action="index.php" method="get">
@@ -30,7 +30,7 @@
     </form>
 
     <?php
-     } else if(!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['gender'])) {
+     } else {
          $gender = $_GET['gender'];
          $firstName = $_GET['firstName'];
          $lastName = $_GET['lastName'];

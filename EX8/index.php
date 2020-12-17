@@ -30,22 +30,22 @@
     </form>
 
     <?php   
-     } else if(!empty($_GET['firstName']) && !empty($_GET['lastName']) && !empty($_GET['gender'])) {
+     } else {
          $gender = $_GET['gender'];
          $firstName = $_GET['firstName'];
          $lastName = $_GET['lastName'];
          $file = $_GET['file'];
          $fileType = strtolower(pathinfo($file,PATHINFO_EXTENSION));
         $fileNoExt = pathinfo($file , PATHINFO_FILENAME);
-         if($gender == "Homme"){
-             echo "Bonjour ". $firstName ." ". $lastName ." et vous etes un ".$gender;
-         } else if($gender == "Femme") {
-            echo "Bonjour ". $firstName ." ". $lastName ." et vous etes une ".$gender;
-         } else if($gender == "autre") {
-            echo "Bonjour ". $firstName ." ". $lastName ." vous etes de type ".$gender;
-          } else {
-                echo "vous n'avez pas mis de sexe ";
-            }
+            if($gender == "Homme"){
+                echo "Bonjour ". $firstName ." ". $lastName ." et vous etes un ".$gender;
+            } else if($gender == "Femme") {
+                echo "Bonjour ". $firstName ." ". $lastName ." et vous etes une ".$gender;
+            } else if($gender == "autre") {
+                echo "Bonjour ". $firstName ." ". $lastName ." vous etes de type ".$gender;
+            } else {
+                    echo "vous n'avez pas mis de sexe ";
+                }
 
             if($fileType == 'pdf'){
                 echo "<br/>  Votre fichier ".$fileNoExt." est un pdf !";
